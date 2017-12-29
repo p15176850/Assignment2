@@ -520,7 +520,7 @@ section:first-of-type h2 {
    background-color: white;
    display: none;
 }
-.tour, .gallery-1, .gallery-2 {
+.tour, .gallery-2 {
    height: 500px;
    width: 80%;
    padding:30px;
@@ -529,6 +529,18 @@ section:first-of-type h2 {
    border-radius: 10px;
    background-color: white;
 }
+
+.gallery-1{
+	height: 500px;
+	width: 80%;
+	padding: 90px;
+	margin: auto;
+	box-shadow: 0px 0px 12px grey;
+	border-radiuss: 10px;
+	background-color: white;
+	position: relative;
+	 
+ }
 .time {
    height: 700px;
    width: 80%;
