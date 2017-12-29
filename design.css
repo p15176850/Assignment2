@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 html {
 	   -webkit-box-sizing: border-box;
-	        box-sizing: border-box;                       
+	   box-sizing: border-box;                       
 }
 
 *
@@ -15,7 +15,7 @@ body {
 }
 header {
 
-    background-image: url("Img1.jpg");
+    background-image: url("images/Img1.jpg");
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -183,7 +183,7 @@ section:first-of-type h2 {
    width: 69%;
 }
 .img-bg {
-	background-image: url("LakeMalawi2.jpg");
+	background-image: url("images/LakeMalawi2.jpg");
     height: 70%;
     background-attachment: fixed;
     background-position: center;
@@ -191,7 +191,7 @@ section:first-of-type h2 {
     background-size: cover;
 }
 .img-bg2 {
-	background-image: url("Safari.jpg");
+	background-image: url("images/Safari.jpg");
     height: 70%;
     background-attachment: fixed;
     background-position: center;
@@ -199,7 +199,7 @@ section:first-of-type h2 {
     background-size: cover;
 }
 .img-bg3 {
-	background-image: url("Img7.jpg");
+	background-image: url("images/Img7.jpg");
     height: 70%;
     background-attachment: fixed;
     background-position: center;
