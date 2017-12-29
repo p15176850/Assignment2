@@ -1,0 +1,563 @@
+/* GLOBAL STYLES */
+html {
+	   -webkit-box-sizing: border-box;
+	        box-sizing: border-box;                       
+}
+
+*
+{
+   margin: 0px;
+   padding:0;
+   box-sizing:border-box;
+}
+body {
+   font-family: "Helvetica", sans-serif;
+}
+header {
+
+    background-image: url("Img1.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3 {
+   text-align: center;
+   color: #FF8E00;
+}
+
+
+  /* THIRD BREAKPOINT (MOBILE SIZE) */
+@media screen and (min-width: 300px) {  
+.modal-content {
+        width: 100%;
+    }
+}
+
+
+  /* SECOND BREAKPOINT (TABLET SIZE) */
+@media screen and (min-width: 500px) {
+	 .modal-content {
+        width: 100%;
+    }
+}
+
+
+  /* FIRST BREAKPOINT (DESKTOP SIZE) */
+@media screen and (max-width: 645px)  {
+   .hidden {
+      display: block;
+   }
+   .nav-item:not(:last-of-type) {
+      display: none;
+   }
+   .nav-brand {
+      padding-left: 50px;
+   }
+}
+
+
+.hidden {
+   display: none;
+}
+.menu-icon {
+   float: right;
+   padding-left: 50px;
+}
+
+.nav {
+   background-color: white;
+   width:100%;
+   height: 70px;
+   z-index: 10;
+   position: fixed;
+   transition: 0.75s ease 0s;
+}
+.nav-item {
+   float:left;
+   list-style-type: none;
+   padding-right: 40px;
+   line-height: 70px;
+   opacity: 1;
+   transition: 0.75s ease 0s;
+}
+.nav-item:first-of-type {
+   margin-left: 100px;
+}
+.nav-link {
+   color: white;
+   text-decoration: none;
+   opacity: 1;
+   transition: color 0.30s ease-in 0s;
+}
+.nav-link:hover {
+   color: #ccc;
+}
+.nav-brand {
+   line-height: 70px;
+   padding-left: 135px;
+   color: white;
+   text-decoration: none;
+   float: left;
+   font-size: 25px;
+   transition: 0.75s ease 0s;
+}
+.nav-brand span {
+   color: #FF8E00;
+}
+.header-text {
+	position: relative;
+   font-size: 100px;
+   color: white;
+   font-weight: bolder;
+   top: 100px;
+   padding: 50px;
+   text-transform: capitalize;
+}
+.header-text2 {
+	font-size: 90px;
+	padding: 30px;
+	padding-top: 75px;
+	position: relative;
+	top: -70px;
+	color: white;
+	text-transform: capitalize;
+}
+.btn {
+   display: block;
+   border: #FF8E00;
+   width: 300px;
+   height: 40px;
+   line-height: 20px;
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 10px;
+   text-align: center;
+   position: relative;
+   margin-left: 40px;
+   border-radius: 5px;
+   transition: 0.3s ease 0s;
+   background-color: #FF8E00;
+}
+.btn:hover {
+    cursor: pointer;
+   background-color: #EE7D00;
+}
+section {
+	height: 700px;
+	width: 100%;
+	background-color: white;
+}
+ section#last-section {
+    height: 500px;
+}
+section:first-of-type {
+	height: 400px;
+}
+section p {
+	color: #2F2F2F;
+	font-size: 20px;
+	width: 65%;
+	margin: auto;
+}
+section h1, .tour h1, .time h1, .gallery-1 h1, .gallery-2 h1 {
+	color: #FF8E00;
+	text-align: center;
+	font-size: 30px;
+	padding: 10px;
+}
+section:first-of-type div {
+   margin: auto;
+}
+section:first-of-type h2 {
+   text-align: center;
+}
+
+.icon-container {
+   margin: auto;
+   width: 69%;
+}
+.img-bg {
+	background-image: url("LakeMalawi2.jpg");
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-bg2 {
+	background-image: url("Safari.jpg");
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-bg3 {
+	background-image: url("Img7.jpg");
+    height: 70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon {
+   width: 300px;
+   height: 300px;
+   float: left;
+   padding: 30px;
+}
+.icon img {
+   width: 100%;
+   height: 75%;
+   border-radius: 50%;
+   text-shadow: 0px 0px 15px black;
+}
+.icon h2 {
+   color: #FF8E00;
+   padding: 15px;
+}
+.gallery_img {
+   transition: 0.3s ease 0s;
+}
+.gallery_img:hover {
+   opacity: 0.5;
+}
+
+ 
+ #map { 
+    width: 100%; 
+    height: 400px; 
+ } 
+
+
+.Contact-Form {
+   width: 60%;
+   margin: auto;
+}
+.Contact-Form textarea {
+   height: 200px;
+   border-radius: 5px;
+   border: 1px solid lightgrey;
+   padding: 5px;
+}
+.Contact-Form input, .Contact-Form textarea{
+   width: 100%;
+   font-size: 15px;
+}
+.Contact-Form input:not([type="submit"]) {
+   height: 40px;
+   border: 1px solid lightgrey;
+   padding: 5px;
+   border-radius: 5px;
+}
+.Contact-Form input[type="submit"]{
+   margin: 0px;
+}
+.Contact-Form label {
+   color: #FF8E00;
+   font-size: 15px;
+}
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column  */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Btn to open modal */
+.modal-btn {
+   width: 100%;
+   height: 40px;
+   background-color: #FF8E00;
+   color: white;
+   font-size: 22px;
+   border: 0px solid white;
+   border-radius: 5px;
+   transition: 0.3s ease-in 0s;
+}
+.modal-btn:hover {
+   background-color: #ee7d00;
+   cursor: pointer;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#img-collage {
+   margin:auto;
+   max-width: 700px;
+   border: 3px solid black;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 90px;
+    right: 250px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item2 {
+   list-style-type: none;
+   padding: 5px;
+   display: block;
+   text-align: center;
+}
+.nav-item2:hover {
+   background-color: #aaa;
+}
+.nav-link2 {
+   color: #FF8E00;
+   font-size:14px;
+   text-align: center;
+}
+.nav-content {
+   width: 100%;
+   height: 200px;
+   border-bottom: 2px solid black;
+   background-color: white;
+   display: none;
+}
+.tour, .gallery-1, .gallery-2 {
+   height: 500px;
+   width: 80%;
+   padding:30px;
+   margin: auto;
+   box-shadow: 0px 0px 12px grey;
+   border-radius: 10px;
+   background-color: white;
+}
+.time {
+   height: 700px;
+   width: 80%;
+   padding:30px;
+   margin: auto;
+   box-shadow: 0px 0px 12px grey;
+   border-radius: 10px;
+   background-color: white;
+}
+.time h4 {
+   color: #FF8E00;
+   font-size: 20px;
+   padding: 10px;
+   text-decoration: underline;
+}
+.time ol {
+   list-style: none;
+   padding: 20px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+
+footer {
+	height: 40px;
+	background-color: #212121;
+}
+footer p {
+	color: #747474;
+	font-size: 15px;
+	line-height: 40px;
+	text-align: center;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- For responsive design -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- for internet explorer compatibility -->
+  <title>Malawi Tours</title>
+  <link rel="stylesheet" href="design.css"><!-- Link to css file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Link to font awesome for icons -->
+</head>
+<body>
+<header>
+  <!-- Navigation bar -->
+  <nav class="nav">
+  <!-- TExt in the top left of page -->
+  <a href="index.html" class="nav-brand"><span>Malawi Tours</span></a>
+  <ul class="nav-list">
+    <!-- Nav items here -->
+    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="tour.html" class="nav-link">Tours</a></li>
+    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+    <li class="nav-item hidden menu-icon"><a href="#" class="nav-link"><i class="fa fa-bars"></i></a></li>
+  </ul>
+  <div class="nav-content">
+    <li class="nav-item2"><a href="index.html" class="nav-link2">Home</a></li>
+    <li class="nav-item2"><a href="tour.html" class="nav-link2">Tours</a></li>
+    <li class="nav-item2"><a href="gallery.html" class="nav-link2">Gallery</a></li>
+    <li class="nav-item2"><a class="nav-link2 close-nav">&times;</a></li>
+  </div>
+  </nav>
+  <!-- end of navigation bar -->
+  <!-- Line of Text on top of image -->
+  <h1 class="header-text">Here is <br> a list of <br>tours</h1>
+  <br> 	<br>  <br>
+  </header>
+  <br><br>
+  <div class="tour">
+    <h1>All Tours</h1>
+    <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column">
+          <div class="content">
+            <!-- 1st tour image -->
+            <img src="Img3.jpg" alt="Mountains" style="width:100%">
+            <!-- name of tour -->
+            <button class="myBtn modal-btn">Tour 1</button>
+          </div>
+        </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <h1>More information</h1>
+      <span class="close" id="close">&times;</span>
+      <p>To find out more information about tickets and prices please contact 
+	     Mr. Mataya on +44 116 2168007</p>
+    </div>
+    </div>
+  <div class="column">
+  <div class="content">
+  <!-- -2nd tour image -->
+  <img src="Img2.png" alt="Lights" style="width:100%">
+  <!-- name of tour -->
+  <button class="myBtn modal-btn">Tour 2</button>
+  </div>
+  </div>
+  <div class="column">
+  <div class="content">
+  <!-- 3rd tour image-->
+  <img src="Img4.jpg" alt="Nature" style="width:100%">
+  <!-- name of tour -->
+  <button class="myBtn modal-btn">Tour 3</button>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+  <!-- 4th tour image-->
+  <img src="Img5.jpg" alt="Mountains" style="width:100%">
+  <!-- name of tour -->
+    <button class="myBtn modal-btn">Tour 4</button>
+      </div>
+        </div>
+      </div>
+   </div>
+
+   <br>
+
+   <div class="time">
+
+      <h1>Times</h1>
+
+      <h4>Tour 1</h4>
+
+         <ol>
+            <li>7 A.M -> 9 A.M</li>
+            <li>4 P.M -> 6 P.M</li>
+            <li>10 P.M -> 12 A.M</li>
+         </ol>
+
+      <h4>Tour 2</h4>
+
+         <ol>
+            <li>8 A.M -> 10 A.M</li>
+            <li>5 P.M -> 7 P.M</li>
+            <li>11 P.M -> 1 A.M</li>
+         </ol>
+
+      <h4>Tour 3</h4>
+
+         <ol>
+            <li>9 A.M -> 11 A.M</li>
+            <li>6 P.M -> 8 P.M</li>
+            <li>12 A.M -> 2 A.M</li>
+         </ol>
+
+      <h4>Tour 4</h4>
+
+         <ol>
+            <li>10 A.M -> 12 P.M</li>
+            <li>7 P.M -> 9 P.M</li>
+            <li>1 A.M -> 3 A.M</li>
+         </ol>
+
+   </div>
+   <!-- The footer -->
+   <footer>
+      <p>&copy; 2017 All rights reserved.</p>
+   </footer>
+
+      <!-- Jquery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+      <script>
+      $('.modal-btn').click(function(){
+         $('#myModal').css('display', 'Block');
+      });
+      $('#close').click(function(){
+         $('#myModal').css('display', 'none');
+      });
+      </script>
+
+      <!-- Javascript file-->
+      <script src="main.js"></script>
+
+</body>
+</html>

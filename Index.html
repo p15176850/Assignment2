@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- For responsive design -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- for internet explorer compatibility -->
+  <title>Malawi Tours</title>
+  <link rel="stylesheet" href="design.css"><!-- Link to css file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Link to font awesome for icons -->
+
+</head>
+<body>
+<header>
+  <!-- Navigation bar -->
+  <nav class="nav">
+    <a href="index.html" class="nav-brand"><span>Malawi Tours</span></a>
+    <ul class="nav-list">
+      <!-- Nav items here -->
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="tour.html" class="nav-link">Tours</a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li class="nav-item hidden menu-icon"><a href="#" class="nav-link"><i class="fa fa-bars"></i></a></li>
+    </ul>
+    <div class="nav-content">
+      <li class="nav-item2"><a href="index.html" class="nav-link2">Home</a></li>
+      <li class="nav-item2"><a href="tour.html" class="nav-link2">Tours</a></li>
+      <li class="nav-item2"><a href="gallery.html" class="nav-link2">Gallery</a></li>
+      <li class="nav-item2"><a class="nav-link2 close-nav">&times;</a></li>
+    </div>
+  </nav>
+  <!-- end of navigation bar -->
+  <!-- Line of Text on top of image -->
+  <h1 class="header-text">Check out <br> our tours <br> in Malawi, Africa</h1>
+  <br> <br> <br> <!--Breaks between button and text -->
+  <a href="tour.html" class="btn">Check our tours out!</a>
+  <br> <br>
+</header>
+<section> <!-- STart of First section -->
+  <h1>Our Destinations</h1> <!-- Title of this Section-->
+  <div class="icon-container"> <!-- Container for 4 destinations -->
+    <!-- 1st destination-->
+    <div class="icon">
+    <!-- Image of desination -->
+    <img src="LakeMalawi.jpg" alt="">
+    <!-- Title of destination -->
+    <h2> Lake Malawi </h2>
+    </div>
+    <!-- 2nd destination-->
+  <div class="icon">
+    <!-- Image of desination -->
+    <img src="Img3.jpg" alt="">
+    <!-- Title of destination -->
+    <h2> Mount Mulanji </h2>
+  </div>
+    <!-- 3rd destination-->
+  <div class="icon">
+    <!-- Image of desination -->
+    <img src="Img6.jpg" alt="">
+    <!-- Title of destination -->
+    <h2> Game Reserve </h2>
+  </div>
+  <!-- 4th destination-->
+  <div class="icon">
+    <!-- Image of desination -->
+    <img src="Img9.jpg" alt="">
+    <!-- Title of destination -->
+    <h2> Holiday Resorts </h2>
+  </div>
+  </div>
+</section>
+  <!-- Image with text -->
+  <div class="img-bg">
+    <h1 class="header-text2 sr1">Water Sports<br>In<br>Malawi</h1>
+  </div>
+<section>
+  <!-- Section title -->
+  <h1 class="sr2">Gallery</h1>
+  <!-- SLIDESHOW -->
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="Gallery5.jpg" style="width:100%;height:50%;">
+  </div>
+  <div class="mySlides fade">
+    <img src="Gallery2.jpg" style="width:100%;height:50%;">
+  </div>
+  <div class="mySlides fade">
+    <img src="Gallery3.jpg" style="width:100%;height:50%;">
+  </div>
+  <div class="mySlides fade">
+    <img src="img1.jpg" style="width:100%;height:50%;">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+</section>
+  <!-- Image with text -->
+  <div class="img-bg2">
+    <h1 class="header-text2 sr3">Breath<br>Taking<br>Wildlife...</h1>
+  </div>
+<section style="height:550px;">
+  <!-- Section title -->
+  <h1 class="sr4"> Our location</h1>   
+  <p> 
+    <div id="map"></div> 
+  <p> 
+  <script src="javascript/main.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwyLu7hawS9d9qvsyoSgQMRL0bxOnmLEA&callback=initMap" type="text/javascript"></script> 
+</section>
+  <!-- Image with text-->
+  <div class="img-bg3">
+    <h1 class="header-text2 sr5">Warm Heart <br> Of <br> Africa </h1>
+  </div>
+  <section id="last-section">
+    <!-- Section Title -->
+    <h1 class="sr6">Contact us</h1>
+	<!-- COntact form -->
+    <form class="Contact-Form sr7">
+      <label for="contact-form-name">Name:</label>
+      <br> <br>
+      <input id="contact-form-name" type="text" placeholder="Enter name..." class="contact-form-input">
+      <br> <br>
+      <label for="contact-form-message">Message:</label>
+      <br> <br>
+      <textarea  id="contact-form-message" width="500" class="contact-form-textarea" placeholder="Enter Message..."></textarea>
+      <br> <br>
+      <input type="submit" class="btn" value="Send">
+    </form>
+  </section>
+  <!-- The footer -->
+  <footer>
+    <p>&copy; 2017 All rights reserved.</p>
+  </footer>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+   crossorigin="anonymous">
+  </script>
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- Javascript file-->
+  <script src="main.js"></script>
+</body>
+</html>
